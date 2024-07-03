@@ -36,15 +36,49 @@
                   "children": [
                     {
                       "attributes": {
-                        "databind-id": "db-1719931983851",
+                        "databind-id": "db-1719954149824",
                         "source-type": "data",
                         "source-label": "",
-                        "source-name": "prereq",
-                        "source-item-type": "value",
-                        "source-item-name": "prereq",
-                        "source-item-field-name": "",
-                        "binding-type": "custom_field",
-                        "from-expression": "app.params['prereq']",
+                        "source-name": "WPHelper",
+                        "source-item-type": "service",
+                        "source-item-name": "getProcedures",
+                        "source-item-field-name": "JSONLink",
+                        "binding-type": "current_row_field",
+                        "from-expression": "app.mdl['WPHelper'].svc['getProcedures'].data.current['JSONLink']",
+                        "to-property": "sxsldata",
+                        "base-type": "",
+                        "shape": ""
+                      },
+                      "name": "twx-databind"
+                    },
+                    {
+                      "attributes": {
+                        "databind-id": "db-1719954289458",
+                        "source-type": "data",
+                        "source-label": "",
+                        "source-name": "WPHelper",
+                        "source-item-type": "service",
+                        "source-item-name": "getProcedures",
+                        "source-item-field-name": "ContentLocation",
+                        "binding-type": "current_row_field",
+                        "from-expression": "app.mdl['WPHelper'].svc['getProcedures'].data.current['ContentLocation']",
+                        "to-property": "anchor",
+                        "base-type": "",
+                        "shape": ""
+                      },
+                      "name": "twx-databind"
+                    },
+                    {
+                      "attributes": {
+                        "databind-id": "db-1720013245161",
+                        "source-type": "data",
+                        "source-label": "",
+                        "source-name": "WPHelper",
+                        "source-item-type": "service",
+                        "source-item-name": "getProcedures",
+                        "source-item-field-name": "prereq",
+                        "binding-type": "current_row_field",
+                        "from-expression": "app.mdl['WPHelper'].svc['getProcedures'].data.current['prereq']",
                         "to-property": "prerequisites",
                         "base-type": "",
                         "shape": ""
@@ -59,13 +93,14 @@
                     "widget-id": "wpCoe-1",
                     "widget-name": "wpCoe-1",
                     "actionid": "DisplaySteps",
-                    "autolaunch": "true"
+                    "autolaunch": "true",
+                    "topoffset": "2px"
                   },
                   "name": "wdg-wpcoe",
                   "children": [
                     {
                       "attributes": {
-                        "databind-id": "db-1719592900084",
+                        "databind-id": "db-1719959975357",
                         "source-type": "ui",
                         "source-label": "SXSL Player",
                         "source-name": "sxslPlayer-1",
@@ -178,19 +213,7 @@
                                               "name": "twx-widget-bindings"
                                             },
                                             {
-                                              "name": "twx-container-content",
-                                              "children": [
-                                                {
-                                                  "attributes": {
-                                                    "twx-widget": "",
-                                                    "widget-id": "button-1",
-                                                    "widget-name": "button-1",
-                                                    "click-expression": "setPrereq();",
-                                                    "text": "Test Prereq"
-                                                  },
-                                                  "name": "twx-button"
-                                                }
-                                              ]
+                                              "name": "twx-container-content"
                                             }
                                           ]
                                         },

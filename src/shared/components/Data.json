@@ -5,6 +5,25 @@
   "children": [
     {
       "attributes": {
+        "name": "WPHelper",
+        "twx-entity-type": "Things",
+        "twx-entity-name": "WPHelper"
+      },
+      "name": "twx-model",
+      "children": [
+        {
+          "attributes": {
+            "name": "getProcedures",
+            "id": "getProcedures",
+            "twx-no-auto-select": "",
+            "on-app-load": ""
+          },
+          "name": "twx-model-service"
+        }
+      ]
+    },
+    {
+      "attributes": {
         "id": "vumark",
         "isbound": "false",
         "isdeletable": "false",
