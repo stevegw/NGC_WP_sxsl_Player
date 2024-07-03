@@ -600,6 +600,23 @@
                                                 },
                                                 {
                                                   "attributes": {
+                                                    "databind-id": "db-1720022346038",
+                                                    "source-type": "widget",
+                                                    "source-label": "Repeater",
+                                                    "source-name": "repeaterProcedures",
+                                                    "source-item-type": "",
+                                                    "source-item-name": "",
+                                                    "source-item-field-name": "",
+                                                    "binding-type": "",
+                                                    "from-expression": "",
+                                                    "to-property": "",
+                                                    "base-type": "",
+                                                    "shape": ""
+                                                  },
+                                                  "name": "twx-databind"
+                                                },
+                                                {
+                                                  "attributes": {
                                                     "eventbind-id": "eb-1719959806894",
                                                     "source-type": "widget",
                                                     "source-label": "Repeater",
